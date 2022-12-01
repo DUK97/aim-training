@@ -24,6 +24,39 @@ a:hover {
 
 .start {
     font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: color .5s ease;
+    color: silver;
+}
+
+.start:hover,
+.start:focus {
+    color: #ebdab7;
+}
+
+.start::before {
+    content: '';
+    transition: box-shadow .5s ease, background-color .5s ease, color .5s ease, width .5s ease;
+    box-shadow: none;
+    color: #f8f7f7;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+    top: 60%;
+    left: 0;
+}
+
+.start:hover::before,
+.start:focus::before {
+    box-shadow: 0 0 20px 14px #458ea7;
+    color: #ebdab7;
+    width: 100%;
+
+
 }
 
 h1 {
@@ -58,7 +91,7 @@ h1 {
     margin: 10px;
 }
 
-.time-btn {
+.time__button {
     background-color: transparent;
     border: 2px solid #c0c0c0;
     color: #fff;
@@ -66,9 +99,10 @@ h1 {
     font-family: inherit;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
+    transition: all .3s;
 }
 
-.time-btn:hover {
+.time__button:hover {
     border: 2px solid #16d9e3;
     color: #16d9e3;
 }
@@ -92,6 +126,11 @@ h1 {
     box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
     border-radius: 30px;
     overflow: hidden;
+}
+
+.board__after-finish {
+    display: flex;
+    flex-direction: column;
 }
 
 .circle {
