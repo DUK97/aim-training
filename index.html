@@ -8,33 +8,39 @@
     <title>Aim Training | Проект 5</title>
 </head>
 <body>
-<div class="screen">
+<div class="screen screen--main">
     <h1>Aim Training</h1>
-    <a href="#" class="start">Начать игру</a>
+    <button class="start">Начать игру</button>
 </div>
 
-<div class="screen">
+<div class="screen screen--time-choosing">
     <h1>Выберите время</h1>
     <ul class="time-list">
-        <li>
-            <button class="time-btn">
+        <li class="time__item">
+            <button class="time__button" data-time="10">
                 10 сек
             </button>
         </li>
-        <li>
-            <button class="time-btn">
+        <li class="time__item">
+            <button class="time__button" data-time="20">
                 20 сек
             </button>
         </li>
-        <li>
-            <button class="time-btn">
+        <li class="time__item">
+            <button class="time__button" data-time="30">
                 30 сек
+            </button>
+
+        </li>
+        <li class="time__item">
+            <button class="time__button" data-time="60">
+                60 сек
             </button>
         </li>
     </ul>
 </div>
 
-<div class="screen">
+<div class="screen screen--game">
     <h3>Осталось <span id="time">00:00</span></h3>
     <div class="board" id="board"></div>
 </div>
