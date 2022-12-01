@@ -1,6 +1,6 @@
 # Aim training
 
-- Страница: [Aim training](https://duk97.github.io/aim-training /)
+- Страница: [Aim training](https://duk97.github.io/aim-training/)
 - Разработчик: [DUK97](https://github.com/DUK97)
 
 ## Описание
